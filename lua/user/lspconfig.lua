@@ -104,6 +104,11 @@ function M.config()
     "eslint",
     "rust_analyzer",
     -- "prismals",
+    "dockerls",
+    "gopls",
+    "rnix",
+    "terraformls",
+    "vuels",
   }
 
   local default_diagnostic_config = {

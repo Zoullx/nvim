@@ -23,6 +23,8 @@ function M.config()
     use_magit_keybindings = false,
     -- Change the default way of opening neogit
     kind = "tab",
+    -- Change the console timeout because it shows up constantly in WSL
+    console_timeout = 3000,
     -- Change the default way of opening the commit popup
     commit_popup = {
       kind = "split",

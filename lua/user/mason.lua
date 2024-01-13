@@ -18,6 +18,14 @@ M.servers = {
   "yamlls",
   "marksman",
   "tailwindcss",
+  "ansiblels",
+  "dagger",
+  "dockerls",
+  "docker_compose_language_service",
+  "gopls",
+  "rnix",
+  "terraformls",
+  "vuels",
 }
 
 function M.config()
