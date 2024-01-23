@@ -67,7 +67,7 @@ function M.config()
   require("telescope").setup {
     defaults = {
       prompt_prefix = icons.ui.Telescope .. " ",
-      selection_caret = icons.ui.Forward .. " ",
+      selection_caret = icons.ui.Forward .. "  ",
       entry_prefix = "   ",
       initial_mode = "insert",
       selection_strategy = "reset",
@@ -85,7 +85,7 @@ function M.config()
         "--line-number",
         "--column",
         "--smart-case",
-        "--hidden",
+        -- "--hidden",
         "--glob=!.git/",
       },
 
