@@ -1,6 +1,7 @@
 local M = {
   "nvim-neotest/neotest",
   dependencies = {
+    "nvim-neotest/nvim-nio",
     "nvim-treesitter/nvim-treesitter",
     -- general tests
     "vim-test/vim-test",
@@ -33,6 +34,7 @@ function M.config()
       },
       require "neotest-vitest",
       require "neotest-zig",
+      require "neotest-rust",
       require "neotest-vim-test" {
         ignore_file_types = { "python", "vim", "lua", "javascript", "typescript" },
       },
