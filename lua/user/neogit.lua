@@ -41,7 +41,7 @@ function M.config()
       hunk = { "", "" },
     },
     integrations = {
-      diffview = true,
+      diffview = false,
     },
   }
 end
