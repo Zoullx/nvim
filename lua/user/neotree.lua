@@ -10,9 +10,14 @@ local M = {
 
 function M.config()
   local wk = require "which-key"
-  wk.register {
-    ["<leader>e"] = { "<cmd>Neotree toggle<CR>", "Explorer" },
-    -- ["<leader>b"] = { "<cmd>Neotree toggle source=buffers position=left<CR>", "Buffers" },
+
+  wk.add {
+    {
+      "<leader>e",
+      "<cmd>Neotree toggle<CR>",
+      desc = "Explorer",
+      hidden = true,
+    },
   }
 
   local icons = require "user.icons"
@@ -140,7 +145,7 @@ function M.config()
       },
     },
     filesystem = {
-      bind_to_cwd = false,
+      bind_to_cwd = true,
       cwd_target = {
         sidebar = "tab", -- sidebar is when position = left or right
         current = "window", -- current is when position = current
